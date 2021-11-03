@@ -1,5 +1,19 @@
 # Software Engineering for Machine Learning Assignment
 
+Deployment Instructions
+
+Build and deploy the models by using Docker and Flask
+In order to run the flask service, build a docker container using run docker build -t ml:latest . as part of the dockerfile directory. Then run docker run -d -p 5000:5000 ml
+The default route to run the service is on port http://localhost:5000 and the prediction service lies at curl http://localhost:5000/predict
+Run Jupyter Notebook and navigate to the notebook to view and analyze the given Student Performance dataset and view the trained ML model and the accuracy of our trained model.
+
+API Specifications
+
+Perform the API call using the url: http://localhost:5000/predict?age=16&absences=3&health=3&studytime=5&traveltime=5&Walc=2&goout=4&famrel=5
+The input data expected by the API are values of the various prediction features training our model and it is predicting the quality of the student with a certain level of accuracy. The sample prediction values of the features are provided in the above API call.
+The output of the service is a numeric value that determines the quality of the student after predicting the data.
+
+
 Testing Explanation and Justification  
 
 https://github.com/CMU-313/fall-2021-hw4-redfox/runs/4082631741?check_suite_focus=true  
