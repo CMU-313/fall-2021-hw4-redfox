@@ -1,5 +1,9 @@
 # Software Engineering for Machine Learning Assignment
 
+This is the implementation of a Machine Learning microservice to determine the various predictors of student performance. 
+
+[Enter model features here]
+
 Deployment Instructions
 
 1) Build and deploy the models by using Docker and Flask
